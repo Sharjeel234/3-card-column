@@ -1,0 +1,146 @@
+:root {
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan: hsl(184, 100%, 22%);
+    --primary-darkcyan: hsl(179, 100%, 13%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --bg-heading-btn: hsl(0, 0%, 95%);
+    --font: 0, 9375rem;
+    --Lexa: 'Lexend Deca';
+    --Big: 'Big Shoulders Display';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-heading-btn);
+    font-family: var(--Lexa);
+    font-size: var(--font);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.main-panel {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-family: var(--Big);
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 30px 0;
+    color: var(--bg-heading-btn);
+    text-transform: uppercase;
+}
+
+.feature {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--paragraph);
+    margin-bottom: 80px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    background: var(--bg-heading-btn);
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+    background: none;
+    border: 2px solid var(--bg-heading-btn);
+    color: var(--bg-heading-btn);
+}
+
+.sedan-btn {
+    color: var(--primary-orange);
+}
+
+.suv-btn {
+    color: var(--primary-cyan);
+}
+
+.luxury-btn {
+    color: var(--primary-darkcyan);
+}
+
+.sedan {
+    background: var(--primary-orange);
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+    height: 500px;
+    padding: 50px;
+}
+
+.suv {
+    background: var(--primary-cyan);
+    width: 300px;
+    height: 500px;
+    padding: 50px;
+}
+
+.luxury {
+    background: var(--primary-darkcyan);
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    height: 500px;
+    padding: 50px;
+}
+
+.attribution {
+    font-size: 12px;
+}
+
+.attribution a {
+    color: var(--primary-cyan);
+    transition: ease-in-out 0.25s;
+}
+
+.attribution a:hover {
+    color: var(--primary-orange);
+}
+
+@media (max-width: 790px) {
+    .main-panel {
+        flex-direction: column;
+    }
+    .sedan {
+        border-radius: 10px 10px 0 0;
+        height: 400px;
+    }
+    .suv {
+        height: 400px;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+        height: 400px;
+    }
+    .title {
+        padding: 20px 0;
+    }
+    .feature {
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .attribution{
+        margin-bottom: 5px;
+    }
+}
