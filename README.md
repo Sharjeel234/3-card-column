@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Github](https://github.com/Sharjeel234/Sharjeel234.github.io.git)
-- Live Site URL: [Github Pages](https://sharjeel234.github.io/)
+- Repository URL: [Github](https://github.com/Sharjeel234/3-card-column.git)
+- Live Site URL: [Github Pages](https://sharjeel234.github.io/3-card-column/)
 
 ### Built with
 
